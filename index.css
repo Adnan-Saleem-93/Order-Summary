@@ -11,17 +11,98 @@ body {
   left: 50%;
   margin: auto;
   transform: translate(-50%, -50%);
+  display: none;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 .main {
-  width: 25%;
+  width: 30%;
   margin: auto;
-  padding: 2rem;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  background-color: white;
+  border-radius: 1rem;
+}
+#main-image {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.order-section {
+  padding: 2rem 3rem;
+  text-align: center;
+}
+#heading {
+  margin-top: 0;
+  font-size: x-large;
+}
+#heading,
+#subscription-type {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.description,
+.subscription-section {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+.subscription-section {
+  text-align: justify;
+}
+#subscription-details {
+  display: inline-block;
+}
+#subscription-type,
+#subscription-price {
+  margin: 0;
+}
+#icon-music {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  position: relative;
+  top: 5px;
+}
+#btn-change {
+  float: right;
+  position: relative;
+  top: 10px;
+  color: hsl(245, 75%, 52%);
+}
+#btn-change:hover {
+  color: hsl(245, 75%, 65%);
+}
+.btn {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem !important;
+  /* width: 100%; */
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+#btn-proceed {
+  border-radius: 1rem;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 1rem;
+}
+#btn-proceed:hover {
+  background-color: hsl(245, 75%, 65%);
+}
+#btn-cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+#btn-cancel:hover {
+  color: hsl(223, 47%, 23%);
 }
